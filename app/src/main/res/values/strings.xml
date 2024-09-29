@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Intel Processor List</string>
+    <string name="title_dummy">Title</string>
+    <string name="desc_dummy">Description</string>
+    <string name="price_dummy">$123,00</string>
+    
+    <!--array title-->
+    <string-array name="data_title">
+        <item>Intel Xeon E</item>
+        <item>Intel Xeon W</item>
+        <item>Intel Xeon D</item>
+        <item>Intel Core Ultra 9</item>
+        <item>Intel Core Ultra 7</item>
+        <item>Intel Core Ultra 5</item>
+        <item>Intel Core i9</item>
+        <item>Intel Core i7</item>
+        <item>Intel Core i5</item>
+        <item>Intel Core i3</item>
+        <item>Intel Inside</item>
+        <item>Intel Atom Seri C</item>
+        <item>Intel Atom Seri P</item>
+    </string-array>
+
+    <!--array desc-->
+    <string-array name="data_description">
+        <item>Intel® Xeon® processors deliver business-ready performance, expandability, and reliability essential for entry-level server solutions. Ensure your business data is accessible and protected with professional-grade servers. Watch this video to learn how entry-level servers can support a variety of business applications and deliver the speed to respond quickly to customers while supporting enhanced security.</item>
+        <item>The Intel® Xeon® W-3500 and Intel® Xeon® W-2500 processors are designed for a wide range of high-performance computing professionals, from 3D rendering, complex 3D CAD, engineering simulation, data science, to AI development. Power your system with exceptional performance, security, and reliability to help you break through your creative barriers.</item>
+        <item>Intel® Xeon® D processors deliver workload-optimized performance in power- and space-constrained environments, from the data center to the intelligent edge. These innovative system-on-chip processors support high-density, single-socket networking, storage, and edge cloud computing solutions with a broad range of integrated security, networking, and acceleration capabilities.</item>
+        <item>Intel® Core™ Ultra (2 Series) processors are built to make you a leader in AI. From increased productivity to higher security and speed, Intel AI is the key to next-level processor performance. Intel Core Ultra 9 processors are designed to handle the most demanding game titles with ease. Paired with powerful graphics, high-refresh-rate displays, and large amounts of memory, these laptops deliver immersive gaming experiences with smooth frame rates and stunning visuals.</item>
+        <item>The Intel® Core™ Ultra (2 Series) processor and available built-in Intel® Arc™ graphics2 are optimized to deliver greater performance for your productivity tasks, content creation, and gaming activities. With a better gaming capability than the Intel Core Ultra 5 but with more editing with AI that is still not as good as its big brother, the Intel Core Ultra 9.</item>
+        <item>Intel® Core™ Ultra (2 Series) mobile processors are high-efficiency processors designed to deliver next-generation AI experiences in sleek, thin mobile form factors, featuring the latest P-core and low-power E-core processor architecture, an enhanced AI Engine NPU 4.0, and available with a built-in Intel® Arc™ GPU1 driven by the new Xᵉ² architecture. The Intel Core Ultra 5 125H is a 14-core mobile processor released in 2023. This CPU uses a hybrid architecture with a combination of performance cores (P-cores), efficiency cores (E-cores), and low-power efficiency cores. It has a maximum turbo frequency of 4.5 GHz and 18MB of cache.</item>
+        <item>Arsitektur hibrida performa tinggi1 prosesor Intel® Core™ Generasi ke-14 dengan hingga delapan Performance-core (P-core) dan hingga 16 Efficient-core (E-core), digabungkan dengan beban kerja yang secara cerdas diarahkan oleh Intel® Thread Director2. Prosesor ini menghadirkan arsitektur hibrida performa yang dirancang untuk performa cerdas, kreasi yang dioptimalkan, dan penyetelan yang disempurnakan untuk memungkinkan gamer bermain game dengan kecepatan clock hingga 6,0 GHz.</item>
+        <item>These processors power high-end PCs with excellent CPU performance for discrete graphics and AI acceleration. Built for gamers looking for maximum performance to help them play the latest games, while still having the power to handle other workloads. New 14th Gen Intel® Core™ processor-based PCs help make it all happen.</item>
+        <item>A processor that is perfect for creating, editing, and sharing 4K content, and enjoy immersive entertainment experiences with this processor. The 14th Gen Intel® Core™ processor family offers faster P-cores and more E-cores with support for DDR4/DDR5 and PCIe 4.0/5.0. This provides a platform that can maximize multitasking and options for easy configuration.</item>
+        <item>This high-value processor delivers the performance you need for everyday gaming, multitasking, and productivity. This next-generation processor continues to leverage Intel’s hybrid performance architecture1 to optimize your gaming, content creation, and productivity. Take advantage of platform innovations designed to provide flexibility and boost your CPU performance with a powerful suite of tuning and overclocking tools. Support for Intel® 700 series chipsets and backward compatibility with Intel® 600 series chipsets let you access the features you need for any task. Whether you’re working, streaming, gaming, or creating, Intel® Core desktop processors deliver the ultimate immersive experience.</item>
+        <item>Intel’s entry-level CPUs deliver the performance you need at the price you want to connect, learn, and play anywhere. Users can confidently enjoy better multitasking, collaboration, and streaming while helping them enjoy fast, secure connectivity on their Notebook, Chromebook, Convertible PC, or Desktop PC.</item>
+        <item>The Intel Atom® C processor, a system-on-a-chip (SoC) design, delivers efficient intelligence in smaller footprints at the network edge. It is used in a variety of scale-out workloads that require low power, high density, high I/O integration, including network routers, switches, storage, security appliances, dynamic web servers, and more.</item>
+        <item>The Intel Atom® P processor is designed to meet the demanding throughput, power, environmental, and latency requirements of 5G. Intel® Ethernet 800 Series technology delivers up to 100 Gbps throughput and supports advanced traffic handling features across packet types.</item>
+    </string-array>
+
+    <!--array image-->
+    <string-array name="data_image">
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/2022-06/xeon-processor-badge.png.rendition.intel.web.320.180.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/2023-02/badge-family-xeon-workstation-w5-w7-w3-centered.png/_jcr_content/renditions/intel.web.320.180.png?ch_ck=1702991229000</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/badge-xeon-d-processor-badge.png.rendition.intel.web.480.270.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/2023-09/core-ultra-9-badge-highrez.png/_jcr_content/renditions/intel.web.84.84.png?ch_ck=1693845685000</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/2023-09/core-ultra-7-badge-highrez.png/_jcr_content/renditions/intel.web.84.84.png?ch_ck=1693845732000</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/2023-09/core-ultra-5-badge-highrez.png/_jcr_content/renditions/intel.web.84.84.png?ch_ck=1693845765000</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/xa/en/images/intel-core-i9-badge-1920x1080.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/xl/es/images/2022-06/km-1920x1080-i7.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/xl/es/images/2022-06/km-1920x1080-i5.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/xl/es/images/2022-06/km-1920x1080-i3.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/intel-inside-processor-badge.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/badge-atom-processor.png.rendition.intel.web.64.64.png</item>
+        <item>https://www.intel.co.id/content/dam/www/central-libraries/us/en/images/badge-atom-processor.png.rendition.intel.web.64.64.png</item>
+    </string-array>
+
+    <!--array price-->
+    <string-array name="data_price">
+        <item>$244.00-$255.00</item>
+        <item>$488.00</item>
+        <item>$754.00</item>
+        <item>$640.00</item>
+        <item>$503.00</item>
+        <item>$375.00</item>
+        <item>$589.00-$599.00</item>
+        <item>$409.00-$419.00</item>
+        <item>$319.00-$329.00</item>
+        <item>$109.00-$119.00</item>
+        <item>$55.00</item>
+        <item>$213.00</item>
+        <item>$352.00</item>
+    </string-array>
+
+    <!--array Segment-->
+    <string-array name="data_segment">
+        <item>Server</item>
+        <item>Workstation</item>
+        <item>Server</item>
+        <item>Mobile</item>
+        <item>Mobile</item>
+        <item>Mobile</item>
+        <item>Desktop</item>
+        <item>Desktop</item>
+        <item>Desktop</item>
+        <item>Desktop</item>
+        <item>mobile</item>
+        <item>Server</item>
+        <item>Server</item>
+    </string-array>
+
+    <!--array spec-->
+    <string-array name="data_spesification">
+        <item>4 Core 4 Thread with Lithography 14 nm (E-2324G)</item>
+        <item>4 Core 8 Thread with Lithography 14 nm (W-2225)</item>
+        <item>10 Core 20 Thread with Cache 15360 MB (D-1844NT)</item>
+        <item>16 Core 22 Thread with Cache 24 MB Intel® Smart Cache (185H)</item>
+        <item>16 Core 22 Thread with Cache 24 MB Intel® Smart Cache (155H)</item>
+        <item>14 Core 18 Thread with Cache 18 MB Intel® Smart Cache (125H)</item>
+        <item>24 Core 32 Thread with Cache 36 MB Intel® Smart Cache (i9 14900K)</item>
+        <item>20 Core 28 Thread with Cache 33 MB Intel® Smart Cache (i7 14700K)</item>
+        <item>14 Core 20 Thread with Cache 24 MB Intel® Smart Cache (i5 14600K)</item>
+        <item>4 Core 8 Thread with Cache 12 MB Intel® Smart Cache (i3 14100F)</item>
+        <item>4 Core 4 Thread with Cache 6 MB Intel® Smart Cache (N100)</item>
+        <item>4 Efficient Core 4 Thread with Cache 9 MB (C5115)</item>
+        <item>8 Efficient Core 8 Thread with Cache 9 MB (P5322)</item>
+    </string-array>
+
+
+</resources>
