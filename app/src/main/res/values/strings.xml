@@ -3,7 +3,7 @@
     <string name="title_dummy">Title</string>
     <string name="desc_dummy">Description</string>
     <string name="price_dummy">$123,00</string>
-    
+
     <!--array title-->
     <string-array name="data_title">
         <item>Intel Xeon E</item>

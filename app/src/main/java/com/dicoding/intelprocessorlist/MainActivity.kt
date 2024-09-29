@@ -36,11 +36,13 @@ class MainActivity : AppCompatActivity() {
         val dataDesc =resources.getStringArray(R.array.data_description)
         val dataImage =resources.getStringArray(R.array.data_image)
         val dataPrice = resources.getStringArray(R.array.data_price)
+        val dataSegment = resources.getStringArray((R.array.data_segment))
+        val dataSpec = resources.getStringArray((R.array.data_spesification))
         val intels = ArrayList<Intel>()
 
         //memasukkkan ke data class
         for (i in dataTitle.indices) {
-            val intel = Intel(dataTitle[i], dataDesc[i], dataImage[i], dataPrice[i])
+            val intel = Intel(dataTitle[i], dataDesc[i], dataImage[i], dataPrice[i], dataSegment[i], dataSpec[i])
             intels.add(intel)
         }
         return intels

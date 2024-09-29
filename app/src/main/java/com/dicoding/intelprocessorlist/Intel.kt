@@ -9,5 +9,7 @@ data class Intel(
     val title: String,
     val description: String,
     val image: String,
-    val price: String
+    val price: String,
+    val segment: String,
+    val spesification: String
 ): Parcelable
