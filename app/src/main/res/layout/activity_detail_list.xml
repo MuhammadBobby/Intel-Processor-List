@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,11 +7,197 @@
     android:layout_height="match_parent"
     tools:context=".DetailListActivity">
 
-    <TextView
-        android:id="@+id/detail_title"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_dummy"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/intel_background_black"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/intel_background_black"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    image view-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/intel_background_black"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/img_detail_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/intel_background" />
+        </androidx.cardview.widget.CardView>
+
+    <!--    title-->
+        <TextView
+            android:id="@+id/text_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_dummy"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/intel_background_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/intel_background_black"
+            app:layout_constraintVertical_bias="0.814" />
+
+    <!--    description-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/desc_dummy"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/intel_background_black"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/text_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:textSize="13sp"
+            android:text="@string/desc_dummy"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    <!--    detail & spec-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/spec_title"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/text_detail_desc"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:layout_editor_absoluteX="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/segment_row"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_detail_segment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_spec"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:layout_editor_absoluteX="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/spesification_row"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_detail_spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dummy_spec"
+                    android:textSize="13sp" />
+            </TableRow>
+        </TableLayout>
+
+<!--    Price-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/price_title"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/text_detail_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price_dummy"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="36dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            android:text="@string/text_petunjuk"
+            app:layout_constraintTop_toBottomOf="@+id/text_detail_price"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/button_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/detail_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

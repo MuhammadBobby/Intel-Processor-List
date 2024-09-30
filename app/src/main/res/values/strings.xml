@@ -3,6 +3,13 @@
     <string name="title_dummy">Title</string>
     <string name="desc_dummy">Description</string>
     <string name="price_dummy">$123,00</string>
+    <string name="spec_title">Specification</string>
+    <string name="segment_row">Segment</string>
+    <string name="dummy_spec">dummy spec</string>
+    <string name="spesification_row">Spesification</string>
+    <string name="price_title">Price</string>
+    <string name="detail_button">Website Utama</string>
+    <string name="text_petunjuk">Ingin melihat lebih lengkap? menuju ke website utama kami! \nKlik button dibawah.</string>
 
     <!--array title-->
     <string-array name="data_title">
@@ -57,16 +64,16 @@
 
     <!--array price-->
     <string-array name="data_price">
-        <item>$244.00-$255.00</item>
+        <item>$244.00</item>
         <item>$488.00</item>
         <item>$754.00</item>
         <item>$640.00</item>
         <item>$503.00</item>
         <item>$375.00</item>
-        <item>$589.00-$599.00</item>
-        <item>$409.00-$419.00</item>
-        <item>$319.00-$329.00</item>
-        <item>$109.00-$119.00</item>
+        <item>$589.00</item>
+        <item>$409.00</item>
+        <item>$319.00</item>
+        <item>$109.00</item>
         <item>$55.00</item>
         <item>$213.00</item>
         <item>$352.00</item>

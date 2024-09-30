@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.IntelProcessorList" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/darkBlue</item>
+         <item name="colorPrimaryVariant">@color/blue</item>
+         <item name="colorOnPrimary">@color/white</item>
     </style>
 
     <style name="Theme.IntelProcessorList" parent="Base.Theme.IntelProcessorList" />
