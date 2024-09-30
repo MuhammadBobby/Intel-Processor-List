@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/logo_actionbar.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/intel_background"
+            android:gravity="center"
+            android:width="40dp"
+            android:height="40dp" />
+    </item>
+</layer-list>

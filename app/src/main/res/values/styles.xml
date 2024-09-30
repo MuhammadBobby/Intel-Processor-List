@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp.Splash.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Optional: Customize colors or background -->
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+</resources>

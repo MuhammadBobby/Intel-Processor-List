@@ -1,10 +1,10 @@
 package com.dicoding.intelprocessorlist
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         //setting
         rvIntel = findViewById(R.id.rv_intel)
@@ -46,5 +47,23 @@ class MainActivity : AppCompatActivity() {
             intels.add(intel)
         }
         return intels
+    }
+
+//    menampilkan menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+//    hanlde menu saat di klik
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_profile -> {
+                val profileIntent =Intent(this@MainActivity, ProfileActivity::class.java)
+                startActivity(profileIntent)
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }

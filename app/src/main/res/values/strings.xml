@@ -10,6 +10,10 @@
     <string name="price_title">Price</string>
     <string name="detail_button">Website Utama</string>
     <string name="text_petunjuk">Ingin melihat lebih lengkap? menuju ke website utama kami! \nKlik button dibawah.</string>
+    <string name="profile">Profile</string>
+    <string name="my_name">Muhammad Bobby Oktaviano</string>
+    <string name="my_email">m.bobbyoktaviano@gmail.com</string>
+    <string name="my_study">Manajemen Informatika | Politeknik Negeri Medan</string>
 
     <!--array title-->
     <string-array name="data_title">
