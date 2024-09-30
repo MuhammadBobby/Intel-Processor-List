@@ -1,5 +1,6 @@
 package com.dicoding.intelprocessorlist
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
@@ -19,6 +20,7 @@ class DetailListActivity : AppCompatActivity() {
         const val KEY_INTEL_LIST = "key_intel_list"
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_list)
@@ -31,6 +33,7 @@ class DetailListActivity : AppCompatActivity() {
         val detailSpec: TextView = findViewById(R.id.text_detail_spec)
         val detailPrice: TextView = findViewById(R.id.text_detail_price)
         val buttonWeb: Button = findViewById(R.id.button_website)
+        val actionShare: ImageView = findViewById(R.id.action_share)
 
 
         val intelList = if (Build.VERSION.SDK_INT >= 33) {
@@ -49,7 +52,13 @@ class DetailListActivity : AppCompatActivity() {
             detailSegment.text = intelList.segment
             detailSpec.text = intelList.spesification
             detailPrice.text = intelList.price
+
+            //share
+            actionShare.setOnClickListener {
+                shareIntelDetails(intelList)
+            }
         }
+
 
 
         //set button web
@@ -59,6 +68,24 @@ class DetailListActivity : AppCompatActivity() {
             intent.data = Uri.parse(url)
             startActivity(intent)
         }
+    }
+
+    private fun shareIntelDetails(intel: Intel) {
+        // Siapkan pesan yang ingin dibagikan
+        val shareMessage = "Check out this Intel processor:\n\n" +
+                "Title: ${intel.title}\n" +
+                "Description: ${intel.description}\n" +
+                "Image: ${intel.image}\n" +
+                "Just only ${intel.price}"
+
+        val shareIntent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, shareMessage)
+            type = "text/plain"
+        }
+
+        //menampilkan aplikasi apa saja yg bisa di share
+        startActivity(Intent.createChooser(shareIntent, "Share Via"))
     }
 
 }
